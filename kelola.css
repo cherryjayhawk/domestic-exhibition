@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #221913;
+}
+
+header {
+    background-color: #221913;
+    position: relative;
+    align-items: center;
+}
+
+.container-h {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.naviitem {
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px 0px 20px;
+}
+
+.logo {
+    max-width: 140px;
+    max-height: 50px;
+    align-items: center;
+}
+
+#menu ul {
+    width: 100%;
+    height: 100%;
+    float: right;
+    padding: 0 0px;
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+#menu ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+  
+#menu ul li {
+    float: left;
+}
+  
+#menu ul li:hover {
+    color: white;
+    background-color: #bd622a;
+}
+  
+#menu ul li a {
+    display: block;
+    color: #bd622a;
+    padding: 20px;
+    text-decoration: none;
+}
+  
+#menu ul li:hover a {
+    color: white;
+}
+  
+#menu ul li:hover > ul {
+    display: block;
+}
+  
+#menu ul ul {
+    position: absolute;
+    padding: 0;
+    display: none;
+    width: auto;
+}
+  
+#menu ul ul li {
+    float: none;
+    position: relative;
+}
+  
+#menu ul ul li a {
+    padding: 10px 30px;
+    color: white;
+    background: #252525;
+}
+  
+#menu ul ul li a:hover {
+    background: #bd622a;
+    color: white;
+}
+  
+#menu ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: auto;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.content-items {
+    margin-bottom: 30px;
+}
+
+.title{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 10px 0 10px;
+}
+
+.title-text{
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+}
+
+.garis-title {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.garis {
+    background-color: #BD622A;
+    border: 1px solid #BD622A;
+    width: 1100px;
+    height: 5px;
+}
+
+/* TABLE */
+
+.list {
+    border: 1px solid #252525;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.list tr, td, th {
+    border: 1px solid #252525;
+    color: #252525;
+    padding: 10px;
+}
+
+.list .add {
+    background-color: #BD622A;
+    border: 1px solid #BD622A;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.list .add a {
+    color: white;
+}
+
+.list .edit {
+    background-color: blue;
+    border: 1px solid blue;
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.list .edit a {
+    color: white;
+}
+
+.list .delete {
+    background-color: red;
+    border: 1px solid red;
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.list .delete a {
+    color: white;
+}
+
+/* ADD */
+
+.add-news {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+.add-news-items {
+    padding: 0 10px 0 10px;
+    display: grid;
+    grid-template-rows: auto;
+    color: white;
+}
+
+.add-news-input {
+    margin-bottom: 10px;
+}
+
+.add-news input {
+    width: 450px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.add-news textarea {
+    border-radius: 10px;
+    width: 800px;
+    height: 290px;
+    padding: 10px;
+}
+
+.add-news .save {
+    background-color: #BD622A;
+    border: 1px solid #BD622A;
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}

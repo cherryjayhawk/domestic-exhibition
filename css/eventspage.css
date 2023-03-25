@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* UNIVERSAL */
+body {
+    background-color: #221913;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+.icon {
+    margin: 2px;
+    background-color: #ffffff;
+    align-items:flex-end;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+/* HEADER */
+header {
+    background-color:#221913;
+    position: relative;
+}
+
+.container {
+    width: 90%;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navitem {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+.navlinks {
+    margin: 5px;
+    padding: 20px;
+    color: #bd622a;
+}
+
+.navlinks:hover {
+    margin: 5px;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.logo {
+    max-width: 160px;
+    max-height: 90px;
+    margin: 0px 0px 0px 0px;
+    align-items: center;
+}
+
+.nav-button {
+    background-color: #bd622a;
+    padding: 6px 14px;
+    margin: 2px;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.nav-button:hover {
+    background-color: #ffffff;
+    padding: 6px 14px;
+    margin: 2px;
+    color: #221913;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.right-nav {
+    margin: 5px;
+}
+
+.searchbar {
+    padding: 6px 14px;
+    margin: 0px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 0px;
+}
+
+/* FOOTER */
+footer {
+    background-color:#ffffff;
+    position: relative;
+    color: black;
+    padding: 20px;
+}
+
+footer-grid {
+    display: grid;
+    grid-template-areas:
+    "sosmed about-us"
+    "web-info about-us-info"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    width: 80%;
+    text-align: left;
+    padding: 10px;
+}
+
+web-info {
+    grid-area: web-info;
+    display: grid;
+    grid-template-areas: 
+    "info1 info4"
+    "info2 info5"
+    "info3 info6"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+sosmed {
+    grid-area: sosmed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+info1 {
+    grid-area: info1;
+    padding: 5px 0px;
+    margin: 5px;
+}
+info2 {
+    grid-area: info2;
+    padding: 5px 0px;
+    margin: 5px;
+}
+info3 {
+    grid-area: info3;
+    padding: 5px 0px;
+    margin: 5px;
+}
+info4 {
+    grid-area: info4;
+    padding: 5px 0px;
+    margin: 5px;
+}
+info5 {
+    grid-area: info5;
+    padding: 5px 0px;
+    margin: 5px;
+}
+info6 {
+    grid-area: info6;
+    padding: 5px 0px;
+    margin: 5px;
+}
+
+about-us {
+    grid-area: about-us;
+    padding: 5px;
+}
+
+about-us-info {
+    grid-area: about-us-info;
+    padding: 5px;
+}
+
+/* EVENTSPAGE */
+content-section {
+    display: flex;
+    flex-direction: column;
+}
+
+upper-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subjudul {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 40px;
+}
+
+.subjudul-view {
+    font-size: 18px;
+    font-weight: 800;
+    color: #bd622a;
+    text-decoration: underline;
+    min-width:fit-content;
+}
+
+.subjudul-view:hover {
+    font-size: 18px;
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/*EVENTSPAGE*/
+
+
+.main-content {
+    width: 90%;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    "content content content" 
+    "content content content" 
+    "content content content"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    text-align: left;
+    background-color: #bd622a;
+    margin: 10px;
+    max-width: 90%;
+    max-height: 200px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.banner h1,h4 {
+    margin: 5px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+content {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: auto;
+    padding: 30px 0px;
+    color: #ffffff;
+}
+
+content .block-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    height: auto;
+    padding: 30px 0px;
+    color: #ffffff;
+    width: 33.333%;
+}
+
+.content .block-events:hover {
+    background-color: #3a2f27;
+}
+
+.poster {
+    height: 292px;
+    width: 200px;
+    border-radius: 5%;
+}   
+
+.block-events .events-title {
+    margin: 20px 0px;
+    padding: 0px 15%;
+    color: #ffffff;
+    text-align: left;
+    font-size: 26px;
+    font-weight: 700;
+    width: 100%;
+}
+
+
+.event-tags {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.tag {
+    background-color: #bd622a;
+    padding: 2px 12px;
+    margin: 2px 6px;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    margin: 5px;
+    font-size: 20px;
+}
+
+h6 {
+    margin: 0px 0px 0px 10px;
+}
+
+.tanggal {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: fit-content;
+    margin: 5px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+.jam {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: fit-content;
+    margin: 5px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+.lokasi {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: fit-content;
+    margin: 5px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    height: fit-content;
+    margin: 5px;
+    font-weight: 400;
+}
+
+/* Image Poster Shrink */
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 100%;
+    }
+    .block-events .events-title {
+        padding: 0;
+    }
+
+    footer-grid {
+        width: 100%;
+    }
+
+    .main-content {
+        width: 90%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 767px) {
+    /* .poster {
+        display: flex;
+        max-height: 292px;
+        max-width: 200px;
+        padding: auto 10px;
+    } */
+    .block-events .events-title {
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .navitem {
+        justify-content: center;
+        width: 100%;
+    }
+    content {
+        display: block;
+    }
+    content .block-events {
+        width: 100%;
+    }
+
+    upper-flex {
+        width: 80%;
+        margin: auto;
+    }
+    footer-grid {
+        display: grid;
+        grid-template-areas:
+        "sosmed" 
+        "web-info"
+        "about-us"
+        "about-us-info" 
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+        width: 90%;
+        text-align: left;
+        padding: 10px;
+    }
+}
+
+/* PHONE (LARGE - SMALL SIZE)*/
+@media only screen and (max-width: 480px) {
+    .banner h1 {
+        font-size: large;
+    }
+    .banner h4 {
+        font-size: small;
+    }
+    .banner {
+        padding: 20px 40px;
+    } 
+}
+
+@media only screen and (max-width: 420px) {
+    web-info {
+        grid-area: web-info;
+        display: grid;
+        grid-template-areas: 
+        "info1" "info2"
+        "info3" "info4"
+        "info5" "info6"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .banner {
+        padding: 10px 20px;
+    }
+    .subjudul {
+        font-size: 28px;
+        font-weight: 800;
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+
+.tag-ketegori {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tag-atas {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #bd622a;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.tag-atas:hover {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #221913;
+}
+

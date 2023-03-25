@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #221913;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    margin-right: 20px;
+}
+
+.arrow {
+    margin-right: 20px;
+}
+
+.right p {
+    font-weight: 500;
+    font-size: 20px;
+    color: #BD622A;
+}
+
+.logo {
+    max-width: 160px;
+    max-height: 90px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+
+/* SIDEBAR */
+.kiri{
+    background-color: #221913;
+    width: 250px;
+    min-height: 100vh;
+    min-width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+}
+
+.kiri ul{
+    margin: 0 0 20px 20px;
+    padding: 0;
+    list-style: none;
+    width: 200px;
+}
+
+.kiri li{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.kiri a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* .kiri a:focus{
+    background: rgb(189, 98, 42);
+    color: white;
+    border-radius: 25px;
+} */
+
+.kiri a:hover{
+    background: rgb(189, 98, 42);
+    border-radius: 25px;
+}
+
+.kiri svg{
+    margin-right: 10px;
+}
+
+
+.side-button-on{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgb(189, 98, 42);
+    color: white;
+    border-radius: 25px;
+}
+
+/* FORM */
+input{
+    box-sizing: border-box;
+    width: 600px;
+    height: 38px;   
+    border: 2px solid #BD622A;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: transparent;
+    color: black;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.title_input{
+    line-height: 0px;
+    font-weight: bold;
+}
+
+input[type="submit"]{
+    max-width: 400px;
+    background: #BD622A;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #BD622A;
+    font-weight: 700;
+}
+
+.bruh {
+    margin-top: 5%;
+}
+
+.submit-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* TABLE */
+.list {
+    border: 1px solid #252525;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.list tr, td, th {
+    border: 1px solid #252525;
+    color: #252525;
+    padding: 5px;
+}
+
+.edit {
+    background-color: green;
+    border: 1px solid green;
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.edit a {
+    color: white;
+}
+
+.delete {
+    background-color: red;
+    border: 1px solid red;
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.delete a {
+    color: white;
+}
+
+.add{
+    background-color: #BD622A;
+    border: 1px solid #BD622A;
+    width: auto;
+    height: 60px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.add a {
+    color: white;
+    text-decoration: none;
+}
+
+/* WITHDRAW */
+.balance {
+	background-color: #BD622A;
+}
+
+.rek{
+    background-color: #171a1c;
+}
+
+.status {
+	margin: 0 20px;
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+    width: 500px;
+}
+
+.withdraw {
+	background-color: green;
+}
+
+.con-wit{
+    margin-top: 10px;
+}

@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #221913;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.container-left {
+    /* background-color: white; */
+    width: 50%;
+    height: 100%;
+}
+
+.container-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.logo {
+    /* border: 1px solid black; */
+    width: auto;
+    height: auto;
+    padding: 30px;
+}
+
+.logo img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+
+
+
+
+/* SIGN UP */
+.signup {
+    /* border: 1px solid black; */
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+
+.title {
+    color: #BD622A;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+}
+
+.isian {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
+
+.isian input {
+    box-sizing: border-box;
+    /* position: absolute; */
+    width: 350px;
+    height: 40px;
+    border: 1px solid #BD622A;
+    border-radius: 8px;
+}
+
+.isian input::placeholder {
+    padding: 10px;
+}
+
+.isian .forgot-pass {
+    display: flex;
+    justify-content: right;
+}
+
+.isian .forgot-pass a{
+    margin-top: 5px;
+    color: #BD622A;
+    text-decoration: none;
+}
+
+.isian button {
+    box-sizing: border-box;
+    width: 350px;
+    height: 40px;
+    background-color: #BD622A;
+    border: 1px solid #BD622A;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600px;
+    font-size: 16px;
+}
+
+
+
+
+/* LOGIN */
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.login p {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login a {
+    font-weight: 400;
+    font-size: 14px;
+    color: #BD622A;
+    text-decoration: none;
+}
+
+
+
+
+
+/* FORGOT PASSWORD */
+.popup {
+    background-color: rgb(0,0,0, 0.5);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup-content{
+    background-color: #221913;
+    box-shadow: 0 20px 40px black;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    padding: 0px 10px 10px 0px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0,25);
+
+    opacity: 0;
+}
+
+.massage {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup:target .popup-content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.close {
+    display: flex;
+    justify-content: right;
+}
+
+.close a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #BD622A;
+}

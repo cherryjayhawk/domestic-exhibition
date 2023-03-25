@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+* {
+    margin: 10px;; 
+    padding: 0;
+}
+
+body{
+    background-color: #221913 ;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #221913;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    margin-right: 20px;
+}
+
+.arrow {
+    margin-right: 20px;
+}
+
+.right p {
+    font-weight: 500;
+    font-size: 20px;
+    color: #BD622A;
+}
+
+.logo {
+    max-width: 160px;
+    max-height: 90px;
+}
+
+/* tab */
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 96vw;
+    color: #9F9F9F;
+}
+
+.tabs_label{
+    display: flex;
+    justify-content: center;
+    padding: 10px 16px;
+    cursor: pointer;
+    width: 22vw;
+    margin: 0px;
+    border-bottom: 1px solid #BD622A;
+}
+
+.tabs_radio{
+    display: none;
+}
+
+.tabs_content{
+    order: 1;
+    width: 100%;
+    line-height: 1.5;
+    font-size: 0.9em;
+    display: none; 
+    color: #BD622A;
+}
+
+.tabs_radio:checked + .tabs_label{
+    font-weight: bold;
+    color: #BD622A;
+    border-bottom: 4px solid #BD622A;
+}
+
+.tabs_radio:checked + .tabs_label + .tabs_content {
+    display: initial;
+}
+
+/* form */
+input{
+    box-sizing: border-box;
+    width: 400px;
+    height: 38px;   
+    border: 2px solid #BD622A;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.title_input{
+    line-height: 0px;
+    font-weight: bold;
+}
+
+input[type="submit"]{
+    margin-top:10px;
+    max-width: 400px;
+    background: #BD622A;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+textarea{
+    padding:10px;
+    margin: 0 auto 10px; 
+    border:#BD622A ;
+    font-size:16px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius:10px;
+    outline:none;
+  }
+
+tenant-grid {
+    display: grid;
+    grid-template-areas: 
+    "tenant tenant"
+    "tenant tenant"
+    "tenant tenant";
+    grid-template-columns: 1fr 3fr;
+}
+
+.tombol {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/* .grid-event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
